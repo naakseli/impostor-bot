@@ -4,9 +4,9 @@ const redisClient = redis.createClient({
 	url: process.env.REDISTOGO_URL,
 });
 
-redisClient.on("ready", function(error) {
-	console.log("Redis connected succesfully!")
-});
+// redisClient.on("ready", function(error) {
+// 	console.log("Redis connected succesfully!")
+// });
 
 const addToArray = (key, object) => {
     return new Promise((resolve, reject) => {
